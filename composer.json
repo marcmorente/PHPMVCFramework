@@ -1,0 +1,15 @@
+{
+    "name": "marc/phpmvc-framework",
+    "authors": [
+        {
+            "name": "Marc Morente",
+            "email": "mmorente@inthinking.co.uk"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
