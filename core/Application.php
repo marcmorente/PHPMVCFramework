@@ -6,10 +6,10 @@ class Application
 {
 
     public static $ROOT_DIR;
+    public static $app;
     public $router;
     public $request;
     public $response;
-    public static $app;
 
     public function __construct($rootPath)
     {

@@ -2,7 +2,9 @@
 
 namespace app\controllers;
 
+use app\core\Application;
 use app\core\Controller;
+use app\core\Request;
 
 class SiteController extends Controller
 {
@@ -20,8 +22,10 @@ class SiteController extends Controller
         return $this->render('contact');
     }
 
-    public function handleContact()
+    public function handleContact(Request $request)
     {
+        $body = $request->getBody();
+        var_dump($body);die;
         return 'Handling submitted data';
     }
 }
