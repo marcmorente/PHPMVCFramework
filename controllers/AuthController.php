@@ -24,12 +24,14 @@ class AuthController extends Controller
                 return 'Success';
             }
 
-            var_dump($registerModel->errors);die;
+            //var_dump($registerModel->errors);die;
             
             return $this->render('register', [
                 'model' => $registerModel
             ]);
         }
-        return $this->render('register');
+        return $this->render('register', [
+            'model' => $registerModel
+        ]);
     }
 }
